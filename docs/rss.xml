@@ -1,2 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Wuyiwai的博客</title><link>https://wuyiwai.github.io</link><description>Hello World</description><copyright>Wuyiwai的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/12730345?v=4</url><title>avatar</title><link>https://wuyiwai.github.io</link></image><lastBuildDate>Sat, 30 Mar 2024 19:13:58 +0000</lastBuildDate><managingEditor>Wuyiwai的博客</managingEditor><ttl>60</ttl><webMaster>Wuyiwai的博客</webMaster><item><title>2023年信息资源汇总</title><link>https://wuyiwai.github.io/post/2023-nian-xin-xi-zi-yuan-hui-zong.html</link><description>111。</description><guid isPermaLink="true">https://wuyiwai.github.io/post/2023-nian-xin-xi-zi-yuan-hui-zong.html</guid><pubDate>Sat, 30 Mar 2024 18:55:20 +0000</pubDate></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Wuyiwai的博客</title><link>https://wuyiwai.github.io</link><description>Hello World</description><copyright>Wuyiwai的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/12730345?v=4</url><title>avatar</title><link>https://wuyiwai.github.io</link></image><lastBuildDate>Sat, 30 Mar 2024 19:38:32 +0000</lastBuildDate><managingEditor>Wuyiwai的博客</managingEditor><ttl>60</ttl><webMaster>Wuyiwai的博客</webMaster><item><title>2023年信息资源汇总</title><link>https://wuyiwai.github.io/post/2023-nian-xin-xi-zi-yuan-hui-zong.html</link><description># 有趣的网址&#13;
+- [FRE123 技术周刊精选推荐](https://www.fre123.com/weekly) - 非常推荐&#13;
+- [数据库优化相关 - Awesome Database Learning](https://github.com/pingcap/awesome-database-learning)&#13;
+&#13;
+# 工具&#13;
+- [比译 - 便捷的翻译和词典应用](https://biyidev.com/)&#13;
+- 沉浸式翻译&#13;
+	- [IOS](https://immersivetranslate.com/docs/installation/#ios-safari)&#13;
+	- [安卓](https://immersivetranslate.com/docs/installation/#%E5%AE%89%E5%8D%93)&#13;
+	- [AI翻译电子书 - 自制双语电子书](https://immersivetranslate.com/docs/usage/#epub-%E7%94%B5%E5%AD%90%E4%B9%A6%E9%98%85%E8%AF%BB%E5%92%8C%E5%8F%8C%E8%AF%AD%E5%AF%BC%E5%87%BA)&#13;
+- [书译 - 助力轻松阅读全球书籍(付费)](https://www.booktranslator.app/zh-CN)&#13;
+- [Dify - 一个LLM应用开发平台](https://github.com/langgenius/dify/blob/main/README_CN.md)&#13;
+- [bilibili - 哔哩下载姬downkyi](https://github.com/leiurayer/downkyi)&#13;
+- [github-chinese](https://github.com/maboloshi/github-chinese?tab=readme-ov-file) - GitHub 汉化插件&#13;
+- [ansel](https://ansel.photos/en/) - 开源数码照片后期软件，可作为 Adobe Lightroom 平替&#13;
+- [Gemini Next Web](https://github.com/blacksev/Gemini-Next-Web/blob/main/README_CN.md) - 一键免费部署你的私人 Gemini 网页应用。</description><guid isPermaLink="true">https://wuyiwai.github.io/post/2023-nian-xin-xi-zi-yuan-hui-zong.html</guid><pubDate>Sat, 30 Mar 2024 18:55:20 +0000</pubDate></item></channel></rss>
