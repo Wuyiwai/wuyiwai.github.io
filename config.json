@@ -3,5 +3,7 @@
     "subTitle":"Hello World",
     "avatarUrl":"https://avatars.githubusercontent.com/u/12730345?v=4",
     "GMEEK_VERSION":"last",
-    "singlePage":["about"]
+    "singlePage":["about"],
+    "onePageListNum":20,
+    "email":"992040155@qq.com"
 }
