@@ -1,8 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Wuyiwai的博客</title><link>https://wuyiwai.github.io</link><description>Hello World</description><copyright>Wuyiwai的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/12730345?v=4</url><title>avatar</title><link>https://wuyiwai.github.io</link></image><lastBuildDate>Tue, 04 Jun 2024 07:44:17 +0000</lastBuildDate><managingEditor>Wuyiwai的博客</managingEditor><ttl>60</ttl><webMaster>Wuyiwai的博客</webMaster><item><title>2024年6月见闻</title><link>https://wuyiwai.github.io/post/2024-nian-6-yue-jian-wen.html</link><description># 好文&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Wuyiwai的博客</title><link>https://wuyiwai.github.io</link><description>Hello World</description><copyright>Wuyiwai的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/12730345?v=4</url><title>avatar</title><link>https://wuyiwai.github.io</link></image><lastBuildDate>Tue, 04 Jun 2024 07:48:04 +0000</lastBuildDate><managingEditor>Wuyiwai的博客</managingEditor><ttl>60</ttl><webMaster>Wuyiwai的博客</webMaster><item><title>2024年6月见闻</title><link>https://wuyiwai.github.io/post/2024-nian-6-yue-jian-wen.html</link><description># 好文&#13;
 - [eBPF开发环境搭建](https://www.hitzhangjie.pro/blog/2023-11-22-ebpf%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/)&#13;
 - [Google CR指引, 如何推进代码评审](https://www.hitzhangjie.pro/blog/2019-09-10-%E5%A6%82%E4%BD%95%E6%9B%B4%E5%A5%BD%E5%9C%B0%E8%BF%9B%E8%A1%8C%E4%BB%A3%E7%A0%81review/)&#13;
 - [X-Y PROBLEM](https://coolshell.cn/articles/10804.html)&#13;
+&#13;
+#工具&#13;
 &#13;
 # 资源&#13;
 - [ollama](https://github.com/ollama/ollama) - 本地运行大模型&#13;
