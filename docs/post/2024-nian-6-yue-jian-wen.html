@@ -4,12 +4,13 @@
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <link rel="icon" href="https://avatars.githubusercontent.com/u/12730345?v=4"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
 <meta name="description" content="# 好文
+- [WebSocket 是什么原理？为什么可以实现持久连接？](https://www.zhihu.com/question/20215561)
 - [美团外卖基于GPU的向量检索系统实践](https://tech.meituan.com/2024/04/11/gpu-vector-retrieval-system-practice.html)
 - [使用 RAG 释放非结构化数据的力量](https://github.blog/2024-06-13-unlocking-the-power-of-unstructured-data-with-rag/)
 - [如何写一份高可读性的软件工程设计文档](https://mp.weixin.qq.com/s/-qXlbPt25-8aZAtCCxh1MQ)
@@ -36,9 +37,11 @@
 - [ChatTTS](https://github.com/2noise/ChatTTS) - 专门为对话场景设计的文本转语音模型，支持英语和中文两种语音 - [演示网址](https://chattts.com/)
 
 # 工具
+- [Slidev](https://cn.sli.dev/) - 用markdown写ppt
 - [BiliVideoDown](https://github.com/kangpeiqin/bilivideo_down/blob/main/README_CN.md) - BiliVideoDown 是一款基于 Flutter 开发的桌面端 B 站视频下载器。">
 <meta property="og:title" content="2024年6月见闻">
 <meta property="og:description" content="# 好文
+- [WebSocket 是什么原理？为什么可以实现持久连接？](https://www.zhihu.com/question/20215561)
 - [美团外卖基于GPU的向量检索系统实践](https://tech.meituan.com/2024/04/11/gpu-vector-retrieval-system-practice.html)
 - [使用 RAG 释放非结构化数据的力量](https://github.blog/2024-06-13-unlocking-the-power-of-unstructured-data-with-rag/)
 - [如何写一份高可读性的软件工程设计文档](https://mp.weixin.qq.com/s/-qXlbPt25-8aZAtCCxh1MQ)
@@ -65,6 +68,7 @@
 - [ChatTTS](https://github.com/2noise/ChatTTS) - 专门为对话场景设计的文本转语音模型，支持英语和中文两种语音 - [演示网址](https://chattts.com/)
 
 # 工具
+- [Slidev](https://cn.sli.dev/) - 用markdown写ppt
 - [BiliVideoDown](https://github.com/kangpeiqin/bilivideo_down/blob/main/README_CN.md) - BiliVideoDown 是一款基于 Flutter 开发的桌面端 B 站视频下载器。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://wuyiwai.github.io/post/2024-nian-6-yue-jian-wen.html">
@@ -126,6 +130,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div class="markdown-body" id="postBody"><h1>好文</h1>
 <ul>
+<li><a href="https://www.zhihu.com/question/20215561" rel="nofollow">WebSocket 是什么原理？为什么可以实现持久连接？</a></li>
 <li><a href="https://tech.meituan.com/2024/04/11/gpu-vector-retrieval-system-practice.html" rel="nofollow">美团外卖基于GPU的向量检索系统实践</a></li>
 <li><a href="https://github.blog/2024-06-13-unlocking-the-power-of-unstructured-data-with-rag/" rel="nofollow">使用 RAG 释放非结构化数据的力量</a></li>
 <li><a href="https://mp.weixin.qq.com/s/-qXlbPt25-8aZAtCCxh1MQ" rel="nofollow">如何写一份高可读性的软件工程设计文档</a></li>
@@ -154,6 +159,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </ul>
 <h1>工具</h1>
 <ul>
+<li><a href="https://cn.sli.dev/" rel="nofollow">Slidev</a> - 用markdown写ppt</li>
 <li><a href="https://github.com/kangpeiqin/bilivideo_down/blob/main/README_CN.md">BiliVideoDown</a> - BiliVideoDown 是一款基于 Flutter 开发的桌面端 B 站视频下载器。</li>
 <li><a href="https://math.bot/" rel="nofollow">math.bot</a> - 用GPT-4o 解答数学题</li>
 <li><a href="https://artalk.js.org/" rel="nofollow">Artalk | 自托管评论系统</a></li>
@@ -164,8 +170,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li><a href="https://oldwestenglish.github.io/grammar/#/" rel="nofollow">薄冰英语语法</a></li>
 </ul></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
+
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
+
 </div>
     <div id="footer">Copyright © <span id="year"></span><a href="https://wuyiwai.github.io"> Wuyiwai的博客 </a>
 <p>
@@ -220,6 +228,8 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5p
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
 document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
 
 function openComments(){
     cm=document.getElementById("comments");
