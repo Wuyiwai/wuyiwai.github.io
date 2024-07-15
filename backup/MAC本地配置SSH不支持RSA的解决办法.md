@@ -30,5 +30,3 @@ Host *
 用来支持 `rsa`
 
 **额外注意**: `~/.ssh` 目录下有个 `known_hosts` 和 `known_hosts.old` 的文件，配置了 `config` 文件后最好先备份下 `known_hosts` 的两个文件以防万一，然后删除这两个文件，这样重新使用ssh登录或者验证时会重新生成fingerprint
-
-<!-- ##{"timestamp":1708560000}## -->
