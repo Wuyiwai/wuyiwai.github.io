@@ -1,9 +1,10 @@
 {
-    "title":"Wuyiwai的博客",
+    "title":"wuyiwai's blog",
     "subTitle":"Hello World",
     "avatarUrl":"https://avatars.githubusercontent.com/u/12730345?v=4",
     "GMEEK_VERSION":"last",
     "singlePage":["about"],
     "onePageListNum":20,
-    "email":"992040155@qq.com"
+    "email":"992040155@qq.com",
+    "bottomText":"转载请注明出处"
 }
