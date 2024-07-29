@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>wuyiwai's blog</title><link>https://wuyiwai.github.io</link><description>Hello World</description><copyright>wuyiwai's blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/12730345?v=4</url><title>avatar</title><link>https://wuyiwai.github.io</link></image><lastBuildDate>Mon, 29 Jul 2024 04:46:45 +0000</lastBuildDate><managingEditor>wuyiwai's blog</managingEditor><ttl>60</ttl><webMaster>wuyiwai's blog</webMaster><item><title>PHP比较有意思的特性</title><link>https://wuyiwai.github.io/post/PHP-bi-jiao-you-yi-si-de-te-xing.html</link><description># null合并运算符 - ??&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>wuyiwai's blog</title><link>https://wuyiwai.github.io</link><description>Hello World</description><copyright>wuyiwai's blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/12730345?v=4</url><title>avatar</title><link>https://wuyiwai.github.io</link></image><lastBuildDate>Mon, 29 Jul 2024 04:47:20 +0000</lastBuildDate><managingEditor>wuyiwai's blog</managingEditor><ttl>60</ttl><webMaster>wuyiwai's blog</webMaster><item><title>PHP比较有意思的特性</title><link>https://wuyiwai.github.io/post/PHP-bi-jiao-you-yi-si-de-te-xing.html</link><description># null合并运算符 - ??&#13;
 - 5.6 -&gt; 7.0 新特性 - [官方文档](https://www.php.net/manual/zh/language.operators.comparison.php#language.operators.comparison.coalesce)&#13;
 ```&#13;
 &lt;?php&#13;
@@ -42,6 +42,10 @@ nvm install node&#13;
 	- 文本光标下的标识符&#13;
 	- 文本光标下的标识符(写入)&#13;
 - tips: 主要是设置这两个的背景色，让其更突出。</description><guid isPermaLink="true">https://wuyiwai.github.io/post/Jetbrain-xi-IDE-pei-zhi-you-hua.html</guid><pubDate>Mon, 15 Jul 2024 11:04:29 +0000</pubDate></item><item><title>2024年7月见闻</title><link>https://wuyiwai.github.io/post/2024-nian-7-yue-jian-wen.html</link><description># 资源&#13;
+- [Yiove 综合书源](https://shuyuan.yiove.com/) - 阅读app书源&#13;
+- [值得一看的技术博客聚合](https://daily-blog.chlinlearn.top/blogs/1)&#13;
+- [oss.gallery](https://oss.gallery/) - 精选的开源工具&#13;
+- [Awesome Cloudflare](https://github.com/zhuima/awesome-cloudflare) - 收录基于 Cloudflare 的开源工具&#13;
 - [dribbble](https://dribbble.com/) - 一般通过这个来看一些不错的设计师作品，提高自己的审美。</description><guid isPermaLink="true">https://wuyiwai.github.io/post/2024-nian-7-yue-jian-wen.html</guid><pubDate>Thu, 04 Jul 2024 17:11:00 +0000</pubDate></item><item><title>2024年6月见闻</title><link>https://wuyiwai.github.io/post/2024-nian-6-yue-jian-wen.html</link><description># 好文&#13;
 - [WebSocket 是什么原理？为什么可以实现持久连接？](https://www.zhihu.com/question/20215561)&#13;
 - [美团外卖基于GPU的向量检索系统实践](https://tech.meituan.com/2024/04/11/gpu-vector-retrieval-system-practice.html)&#13;
