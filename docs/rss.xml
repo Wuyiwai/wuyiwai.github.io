@@ -1,5 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>wuyiwai's blog</title><link>https://wuyiwai.github.io</link><description>Hello World</description><copyright>wuyiwai's blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/12730345?v=4</url><title>avatar</title><link>https://wuyiwai.github.io</link></image><lastBuildDate>Mon, 29 Jul 2024 03:21:56 +0000</lastBuildDate><managingEditor>wuyiwai's blog</managingEditor><ttl>60</ttl><webMaster>wuyiwai's blog</webMaster><item><title>npm相关 - 安装、常用命令</title><link>https://wuyiwai.github.io/post/npm-xiang-guan-%20-%20-an-zhuang-%E3%80%81-chang-yong-ming-ling.html</link><description>#### 安装NVM和最新NPM&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>wuyiwai's blog</title><link>https://wuyiwai.github.io</link><description>Hello World</description><copyright>wuyiwai's blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/12730345?v=4</url><title>avatar</title><link>https://wuyiwai.github.io</link></image><lastBuildDate>Mon, 29 Jul 2024 04:46:45 +0000</lastBuildDate><managingEditor>wuyiwai's blog</managingEditor><ttl>60</ttl><webMaster>wuyiwai's blog</webMaster><item><title>PHP比较有意思的特性</title><link>https://wuyiwai.github.io/post/PHP-bi-jiao-you-yi-si-de-te-xing.html</link><description># null合并运算符 - ??&#13;
+- 5.6 -&gt; 7.0 新特性 - [官方文档](https://www.php.net/manual/zh/language.operators.comparison.php#language.operators.comparison.coalesce)&#13;
+```&#13;
+&lt;?php&#13;
+// NULL 合并运算符的例子&#13;
+$action = $_POST['action'] ?? 'default';&#13;
+&#13;
+// 以上例子等同于于以下 if/else 语句&#13;
+if (isset($_POST['action'])) {&#13;
+    $action = $_POST['action'];&#13;
+} else {&#13;
+    $action = 'default';&#13;
+}&#13;
+?&gt;&#13;
+```&#13;
+&#13;
+# 太空船操作符（组合比较符）- &lt;&gt;&#13;
+- 5.6 -&gt; 7.0 新特性 - [官方文档](https://www.php.net/manual/zh/migration70.new-features.php#migration70.new-features.spaceship-op)&#13;
+- 太空船操作符用于比较两个表达式。</description><guid isPermaLink="true">https://wuyiwai.github.io/post/PHP-bi-jiao-you-yi-si-de-te-xing.html</guid><pubDate>Mon, 29 Jul 2024 04:46:23 +0000</pubDate></item><item><title>npm相关 - 安装、常用命令</title><link>https://wuyiwai.github.io/post/npm-xiang-guan-%20-%20-an-zhuang-%E3%80%81-chang-yong-ming-ling.html</link><description>#### 安装NVM和最新NPM&#13;
 1. 安装nvm，打开你的终端，然后输入以下命令：&#13;
 &#13;
 ```bash&#13;
