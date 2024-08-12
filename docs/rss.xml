@@ -1,5 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>wuyiwai's blog</title><link>https://wuyiwai.github.io</link><description>Hello World</description><copyright>wuyiwai's blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/12730345?v=4</url><title>avatar</title><link>https://wuyiwai.github.io</link></image><lastBuildDate>Mon, 29 Jul 2024 04:47:20 +0000</lastBuildDate><managingEditor>wuyiwai's blog</managingEditor><ttl>60</ttl><webMaster>wuyiwai's blog</webMaster><item><title>PHP比较有意思的特性</title><link>https://wuyiwai.github.io/post/PHP-bi-jiao-you-yi-si-de-te-xing.html</link><description># null合并运算符 - ??&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>wuyiwai's blog</title><link>https://wuyiwai.github.io</link><description>Hello World</description><copyright>wuyiwai's blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/12730345?v=4</url><title>avatar</title><link>https://wuyiwai.github.io</link></image><lastBuildDate>Mon, 12 Aug 2024 15:17:23 +0000</lastBuildDate><managingEditor>wuyiwai's blog</managingEditor><ttl>60</ttl><webMaster>wuyiwai's blog</webMaster><item><title>2024年8月见闻</title><link>https://wuyiwai.github.io/post/2024-nian-8-yue-jian-wen.html</link><description># 文章&#13;
+- [使用obsidian一键发布博客](https://yaofun.top/posts/2024/03/%E4%BD%BF%E7%94%A8-obsidian-%E4%B8%80%E9%94%AE%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/)&#13;
+- [自然视力恢复法](https://www.yinwang.org/blog-cn/2022/02/22/myopia) - 有兴趣可以试试&#13;
+- [Building A Generative AI Platform](https://huyenchip.com/2024/07/25/genai-platform.html)&#13;
+- [使用 Keepass 实现跨平台密码同步：详细方案](https://blog.taoluyuan.com/blog/keepass-cross-platform-password-sync-guide)&#13;
+- [减肥指南 - 指标](https://github.com/hylarucoder/the-road-to-fitness/blob/master/recipes/%E6%8C%87%E6%A0%87%E7%AF%87.md)&#13;
+- [什么是好的技术博客？](https://notes.eatonphil.com/2024-04-10-what-makes-a-great-tech-blog.html)&#13;
+	- 解决疑难问题&#13;
+	- 展示能运行的代码&#13;
+	- 使事情变得更简单&#13;
+	- 定期写作&#13;
+	- 讨论权衡和缺点&#13;
+	- 避免使用网络俚语、表情包、脏话、讽刺和抱怨&#13;
+- [The LLM Triangle Principles to Architect Reliable AI Apps](https://towardsdatascience.com/the-llm-triangle-principles-to-architect-reliable-ai-apps-d3753dd8542e)&#13;
+- [谷歌代码搜索的原理](https://swtch.com/~rsc/regexp/regexp4.html)&#13;
+&#13;
+# 资源&#13;
+- [数织](https://cn.puzzle-nonograms.com/) - 在线逻辑解谜游戏&#13;
+- [openalternative](https://openalternative.co/) - 汇集了优秀开源项目的网站&#13;
+- [code-box](https://github.com/027xiguapi/code-box) - 解除CSDN / 知乎 / 脚本之家 / 博客园 / 博客园 / 51CTO 博客 /php 中文网等网站的登录。</description><guid isPermaLink="true">https://wuyiwai.github.io/post/2024-nian-8-yue-jian-wen.html</guid><pubDate>Mon, 12 Aug 2024 15:16:56 +0000</pubDate></item><item><title>PHP比较有意思的特性</title><link>https://wuyiwai.github.io/post/PHP-bi-jiao-you-yi-si-de-te-xing.html</link><description># null合并运算符 - ??&#13;
 - 5.6 -&gt; 7.0 新特性 - [官方文档](https://www.php.net/manual/zh/language.operators.comparison.php#language.operators.comparison.coalesce)&#13;
 ```&#13;
 &lt;?php&#13;
