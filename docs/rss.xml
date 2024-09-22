@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>wuyiwai's blog</title><link>https://wuyiwai.github.io</link><description>Hello World</description><copyright>wuyiwai's blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/12730345?v=4</url><title>avatar</title><link>https://wuyiwai.github.io</link></image><lastBuildDate>Sun, 22 Sep 2024 15:40:10 +0000</lastBuildDate><managingEditor>wuyiwai's blog</managingEditor><ttl>60</ttl><webMaster>wuyiwai's blog</webMaster><item><title>2024年9月见闻</title><link>https://wuyiwai.github.io/post/2024-nian-9-yue-jian-wen.html</link><description>## 工具&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>wuyiwai's blog</title><link>https://wuyiwai.github.io</link><description>Hello World</description><copyright>wuyiwai's blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/12730345?v=4</url><title>avatar</title><link>https://wuyiwai.github.io</link></image><lastBuildDate>Sun, 22 Sep 2024 15:44:54 +0000</lastBuildDate><managingEditor>wuyiwai's blog</managingEditor><ttl>60</ttl><webMaster>wuyiwai's blog</webMaster><item><title>保健品相关</title><link>https://wuyiwai.github.io/post/bao-jian-pin-xiang-guan.html</link><description>## 鱼油&#13;
+- Omega-3 脂肪酸含量：每天建议摄入 **1000 mg**&#13;
+- EPA 和 DHA 的比例：建议 **3:2**&#13;
+	- EPA 高：对心血管健康好&#13;
+	- DHA 高：对大脑和视力好&#13;
+- 吸收形式：&#13;
+	- TG（甘油三酯）：这是鱼油中的天然形式，人体可以直接吸收。</description><guid isPermaLink="true">https://wuyiwai.github.io/post/bao-jian-pin-xiang-guan.html</guid><pubDate>Sun, 22 Sep 2024 15:44:33 +0000</pubDate></item><item><title>2024年9月见闻</title><link>https://wuyiwai.github.io/post/2024-nian-9-yue-jian-wen.html</link><description>## 工具&#13;
 - [100 个句子记完 7000 个雅思单词](https://english.shuzijumin.com/)&#13;
 -  [chardb](https://github.com/chartdb/chartdb) - 类似 drawdb 的数据库设计工具&#13;
 - [iphone设备参数对比](https://hubweb.cn/)&#13;
