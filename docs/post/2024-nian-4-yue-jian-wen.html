@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
-    <script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>
+    
     <link rel="icon" href="https://avatars.githubusercontent.com/u/12730345?v=4"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
@@ -79,7 +79,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 }
 
 </style>
-
+[':root { --primary-color: #2563eb; --text-color: #374151; --bg-color: #ffffff; }', "body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: var(--text-color); background: var(--bg-color); line-height: 1.6; }", '.markdown-body { max-width: 65ch; margin: 0 auto; padding: 2rem 1rem; }', '.markdown-body h1 { font-size: 2em; margin-bottom: 1em; color: var(--text-color); border-bottom: none; }', '.markdown-body h2 { font-size: 1.5em; margin: 1.5em 0 0.5em; color: var(--text-color); }', '.markdown-body p { margin: 1em 0; line-height: 1.75; }', '.markdown-body a { color: var(--primary-color); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }', '.markdown-body a:hover { border-bottom-color: var(--primary-color); }', '.markdown-body code { background: #f3f4f6; padding: 0.2em 0.4em; border-radius: 3px; font-size: 0.9em; }', '.markdown-body pre { background: #f3f4f6; padding: 1em; border-radius: 8px; overflow-x: auto; }', '.markdown-body img { max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }', '@media (prefers-color-scheme: dark) { :root { --primary-color: #60a5fa; --text-color: #e5e7eb; --bg-color: #111827; } .markdown-body code { background: #1f2937; } .markdown-body pre { background: #1f2937; } }']
 
 
 
@@ -168,7 +168,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li><a href="https://www.v2ex.com/t/1020400#reply19" rel="nofollow">我开源正在卖的软件，应该用什么协议好？</a> - <code class="notranslate">独立开发者</code></li>
 <li><a href="https://zhuanlan.zhihu.com/p/593061700" rel="nofollow">史上最全！全球22种开源商业收入模式</a> - <code class="notranslate">独立开发者</code></li>
 </ul></div>
-<div style="font-size:small;margin-top:8px;float:right;">转载请注明出处</div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
@@ -183,8 +183,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 var now=new Date();
 document.getElementById("copyrightYear").innerHTML=now.getFullYear();
 
-if(""!=""){
-    var startSite=new Date("");
+if("03/31/2024"!=""){
+    var startSite=new Date("03/31/2024");
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
     document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
@@ -220,7 +220,7 @@ function utterancesTheme(theme){
     iframe.contentWindow.postMessage(message,'https://utteranc.es');
 }
 if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
-console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+console.log("\n %c Gmeek main https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
 </script>
 
 <script>
@@ -232,6 +232,7 @@ document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
 function openComments(){
     cm=document.getElementById("comments");
     cmButton=document.getElementById("cmButton");
+    cmButton.disabled=true;
     cmButton.innerHTML="loading";
     span=document.createElement("span");
     span.setAttribute("class","AnimatedEllipsis");
@@ -268,6 +269,6 @@ function iFrameLoading(){
 
 
 </script>
-<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script>
+['document.querySelectorAll(\'a[href^="#"]\').forEach(anchor => {', "    anchor.addEventListener('click', function (e) {", '        e.preventDefault();', "        document.querySelector(this.getAttribute('href')).scrollIntoView({", "            behavior: 'smooth'", '        });', '    });', '});']
 
 </html>
