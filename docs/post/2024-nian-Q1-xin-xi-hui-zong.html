@@ -1,225 +1,323 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="light">
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2024年Q1信息汇总 - wuyiwai's blog</title>
-    <meta name="description" content="# 工具
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/12730345?v=4"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="# 工具
 - [吐司简历](https://lyly.top/) - 直接在线填写简历内容
 - [开箱即用的 Obsidian / Typora 简历](https://github.com/BingyanStudio/LapisCV)
 - [Applite](https://github.com/milanvarady/Applite) - mac下homebrew可视化工具
 - [FastChat](https://github.com/lm-sys/FastChat) - 用于训练和评估大型语言模型的开放平台，可以在同一个界面对不同模型的输出进行可视化比对
 - [Jan](https://github.com/janhq/jan) - 一站式体验 LLMs 的桌面应用。">
-    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/12730345?v=4">
-    <style>
-        :root {
-            --primary-color: #2563eb;
-            --text-primary: #1e293b;
-            --text-secondary: #64748b;
-            --bg-primary: #ffffff;
-            --bg-secondary: #f8fafc;
-            --border-color: #e2e8f0;
-            --code-bg: #f1f5f9;
-            --blockquote-bg: #f8fafc;
-            --selection-bg: #bfdbfe;
-            --selection-text: #1e293b;
-        }
+<meta property="og:title" content="2024年Q1信息汇总">
+<meta property="og:description" content="# 工具
+- [吐司简历](https://lyly.top/) - 直接在线填写简历内容
+- [开箱即用的 Obsidian / Typora 简历](https://github.com/BingyanStudio/LapisCV)
+- [Applite](https://github.com/milanvarady/Applite) - mac下homebrew可视化工具
+- [FastChat](https://github.com/lm-sys/FastChat) - 用于训练和评估大型语言模型的开放平台，可以在同一个界面对不同模型的输出进行可视化比对
+- [Jan](https://github.com/janhq/jan) - 一站式体验 LLMs 的桌面应用。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wuyiwai.github.io/post/2024-nian-Q1-xin-xi-hui-zong.html">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/12730345?v=4">
+<title>2024年Q1信息汇总</title>
 
-        [data-theme="dark"] {
-            --primary-color: #3b82f6;
-            --text-primary: #e5e5e5;
-            --text-secondary: #a3a3a3;
-            --bg-primary: #000000;
-            --bg-secondary: #171717;
-            --border-color: #262626;
-            --code-bg: #171717;
-            --blockquote-bg: #171717;
-            --selection-bg: #1e293b;
-            --selection-text: #e2e8f0;
-        }
 
-        ::selection {
-            background: var(--selection-bg);
-            color: var(--selection-text);
-        }
 
-        * {
-            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-primary);
-            background: var(--bg-primary);
-        }
-
-        .container {
-            max-width: 768px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-
-        .header {
-            padding: 2rem 0;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        .nav-link {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.2s;
-        }
-
-        .nav-link:hover {
-            color: var(--primary-color);
-        }
-
-        .post-list {
-            padding: 2rem 0;
-        }
-
-        .post-item {
-            padding: 1.5rem 0;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .post-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            text-decoration: none;
-            margin-bottom: 0.5rem;
-        }
-
-        .post-meta {
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-            display: flex;
-            gap: 1rem;
-        }
-
-        .post-content {
-            margin-top: 1rem;
-            color: var(--text-secondary);
-        }
-
-        .theme-switch {
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0.5rem;
-            border-radius: 0.375rem;
-            transition: background-color 0.2s;
-        }
-
-        .theme-switch:hover {
-            background-color: var(--bg-secondary);
-        }
-
-        .theme-switch svg {
-            width: 1.25rem;
-            height: 1.25rem;
-            transform-origin: center;
-            transition: transform 0.3s ease;
-        }
-
-        [data-theme="dark"] .theme-switch svg {
-            transform: rotate(360deg);
-        }
-
-        @media (max-width: 640px) {
-            .nav {
-                flex-direction: column;
-                gap: 1rem;
-                align-items: flex-start;
-            }
-        }
-    </style>
-    
+</head>
 <style>
-    /* post 特定样式... */
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
 </style>
 
 
-    <script>
-        function toggleTheme() {
-            const html = document.documentElement;
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-        }
 
-        (function() {
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            
-            if (!localStorage.getItem('theme')) {
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
-            }
-        })();
-    </script>
-    
-</head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="/" class="nav-title">wuyiwai's blog</a>
-                <div class="nav-links">
-                    <a href="/tag.html" class="nav-link">标签</a>
-                    <a href="/about.html" class="nav-link">关于</a>
-                    <button class="theme-switch nav-link" onclick="toggleTheme()" title="切换主题">
-                        <svg viewBox="0 0 16 16" fill="currentColor">
-                            M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z
-                        </svg>
-                    </button>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <main class="container">
-        
-<article>
-    <!-- 文章内容... -->
-</article>
-
-    </main>
-
-    <footer class="container" style="padding: 2rem 0; text-align: center; color: var(--text-secondary); font-size: 0.875rem;">
-    <div>
-        
-    </div>
-    <div style="margin-top: 0.5rem;">
-        <a href="/rss.xml" style="color: var(--text-secondary); text-decoration: none;">RSS</a>
-        •
-        Powered by <a href="https://github.com/Meekdai/Gmeek" style="color: var(--primary-color); text-decoration: none;">Gmeek</a>
-    </div>
-</footer> 
+    <div id="header">
+<h1 class="postTitle">2024年Q1信息汇总</h1>
+<div class="title-right">
+    <a href="https://wuyiwai.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/wuyiwai/wuyiwai.github.io/issues/2" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
     
 
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
 
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h1>工具</h1>
+<ul>
+<li><a href="https://lyly.top/" rel="nofollow">吐司简历</a> - 直接在线填写简历内容</li>
+<li><a href="https://github.com/BingyanStudio/LapisCV">开箱即用的 Obsidian / Typora 简历</a></li>
+<li><a href="https://github.com/milanvarady/Applite">Applite</a> - mac下homebrew可视化工具</li>
+<li><a href="https://github.com/lm-sys/FastChat">FastChat</a> - 用于训练和评估大型语言模型的开放平台，可以在同一个界面对不同模型的输出进行可视化比对</li>
+<li><a href="https://github.com/janhq/jan">Jan</a> - 一站式体验 LLMs 的桌面应用。这是一个支持在本地运行开源 LLMs 和连接 ChatGPT 服务的 AI 对话桌面应用，它开箱即用、界面清爽、不挑硬件，支持设置代理、接入 ChatGPT、一键下载/接入适配当前电脑配置的大模型、离线运行等功能，适用于 Windows、Linux、macOS 操作系统。</li>
+<li><a href="https://github.com/Deeptrain-Community/chatnio/blob/main/README_zh-CN.md">Chat Nio - ai套壳API工具</a> - 下一代 AI 一站式解决方案</li>
+<li><a href="https://epub.press/" rel="nofollow">EpubPress</a> - 是一个适用于 Chrome&amp;Firefox 的浏览器扩展，可以将您喜爱的网络内容转换为电子书</li>
+<li><a href="https://dockge.kuma.pet/" rel="nofollow">Dockge</a> - 开源的docker compose可视化编辑器，很好用</li>
+<li><a href="https://randomaiproduct.com/" rel="nofollow">Random AI Product</a> - 随机介绍一个ai产品</li>
+<li><a href="https://www.trancy.org/zh-cn" rel="nofollow">Trancy</a> - 沉浸式AI语言学习工具 - 翻译工具</li>
+<li><a href="https://github.com/yaobiao131/downkyicore">哔哩下载姬(跨平台版)</a> - bilibili下载工具</li>
+<li><a href="https://pagescms.org/" rel="nofollow">pagescms</a> - 为静态博客配置cms</li>
+<li><a href="https://drugs.dxy.cn/pc" rel="nofollow">丁香用药助手</a> - 实用</li>
+<li><a href="https://www.socpk.com/" rel="nofollow">芯片性能排行榜</a></li>
+<li><a href="https://apvarun.github.io/graphize/" rel="nofollow">graphize</a> - 看起来不错的 JSON 可视化的工具</li>
+<li><a href="https://searchemoji.app/zh-hans" rel="nofollow">searchemoji</a> - 好用的emoji搜索引擎</li>
+<li><a href="https://github.com/mac-cleanup/mac-cleanup-py">mac-cleanup-py</a> - 适用于 macOS 的 Python 清理脚本</li>
+<li><a href="http://www.xlssnav.com/" rel="nofollow">小懒搜书</a> - 搜书引擎聚合站</li>
+<li><a href="https://iui.su/2016/" rel="nofollow">Yida</a> - 免费开源多平台聚合工具</li>
+<li><a href="https://www.atvcop.com/" rel="nofollow">atvcop</a> - copilot激活工具</li>
+<li><a href="https://gopeed.com/zh-CN" rel="nofollow">gopeed</a> - 下载工具</li>
+<li><a href="https://easydevo.boringboring.design/" rel="nofollow">EasyDevo</a> - mac清理工具</li>
+<li><a href="https://lyrify.sipc.ink/" rel="nofollow">Lyrify</a> - 一个聚合翻译的网站</li>
+<li><a href="https://24hbook.com/" rel="nofollow">24h搜书网</a></li>
+<li><a href="https://greasyfork.org/zh-CN/scripts/486915-%E4%BA%AC%E4%B8%9C%E5%95%86%E5%93%81%E5%8F%82%E6%95%B0%E5%AF%B9%E6%AF%94%E5%B7%A5%E5%85%B7" rel="nofollow">油猴脚本 - 京东商品参数对比工具</a></li>
+<li><a href="https://metaso.cn/" rel="nofollow">秘塔AI搜索</a> - 没有广告的ai搜索引擎</li>
+<li><a href="https://github.com/lencx/Noi">Noi - </a> - 跨平台的桌面应用，在一个界面里面集成了多个 AI 网站，支持复用提示，以及同时向多款 AI 提问</li>
+<li><a href="https://dapanyuntu.com/" rel="nofollow">大盘云图</a> - 通过大盘展示股票信息的工具</li>
+<li><a href="https://www.yeschat.ai/" rel="nofollow">YesChat</a> - 每天可以用20次gpt4额度</li>
+<li><a href="https://www.notion.so/product/calendar" rel="nofollow">Notion 新产品日历工具：Calendar</a></li>
+<li><a href="https://app.immersivetranslate.com/" rel="nofollow">沉浸式翻译 - 本地翻译文件工具</a></li>
+<li><a href="https://regex-vis.com/" rel="nofollow">正则表达式可视化工具</a></li>
+<li><a href="https://typing.yasinchan.com/" rel="nofollow">typing-一个简洁的打字练习网站</a></li>
+<li><a href="https://www.crxsoso.com/webstore/detail/bbbiejemhfihiooipfcjmjmbfdmobobp" rel="nofollow">BewlyBewly - Bilibili主页美化chrome插件</a></li>
+<li><a href="https://hougiser.gitee.io/music-score/#/" rel="nofollow">吉他自学工具站</a></li>
+<li><a href="https://github.com/lchh5/GeminiPro-Next-Web?tab=readme-ov-file">Gemini Pro Chat</a> - 一键免费部署你的跨平台私人 Gemini 应用, 支持Gemini Pro 模型。基于 ChatGPT Next Web.</li>
+<li><a href="https://loomcdn.k1t.cc/" rel="nofollow">Loom - 又一个类似utool的生产力工具</a></li>
+<li><a href="https://www.pingti.app/" rel="nofollow">最佳平替</a></li>
+<li><a href="https://code.fittentech.com/" rel="nofollow">Fitten Code：免费AI代码助手</a></li>
+<li><a href="https://doubanbook.plus/" rel="nofollow">Douban Book+</a> - 发现好书靠豆瓣，阅读好书靠 Douban Book+</li>
+<li><a href="https://github.com/BartoszJarocki/cv">CV</a> - 一个简洁的，构建个人在线简历的项目</li>
+<li><a href="https://app.immersivetranslate.com/" rel="nofollow">翻译本地文件</a></li>
+<li><a href="https://gemini-pro.chat/" rel="nofollow">Gemini Chat Pro</a> - 免费的谷歌 Gemini Chat Pro，在线网站</li>
+<li><a href="https://www.v2ex.com/t/1007492#reply139" rel="nofollow">便签 Pro</a> - v站看到的推广: MacOS 最锋利的便签笔记</li>
+</ul>
+<h1>资源</h1>
+<ul>
+<li><a href="https://chuhai.tools/" rel="nofollow">chuhai.tools</a> - 独立开发者出海工具</li>
+<li><a href="https://uxbaike.com/" rel="nofollow">uxbaike - 独立开发者好工具</a> - UX 百科，属于设计师的专业知识库</li>
+<li><a href="https://osdmp.com/" rel="nofollow">开源数字集市</a></li>
+<li><a href="https://zxyle.github.io/PDF-Explained/" rel="nofollow">书籍 - PDF 解析</a> - 描述了pdf的原理</li>
+<li><a href="https://zhuanlan.zhihu.com/p/676445568" rel="nofollow">Huberman Lab Podcast 全系列笔记</a> - 分享了许多关于睡眠、压力管理、学习、锻炼和营养等方面的知识与实用建议</li>
+<li><a href="https://github.com/datawhalechina/llm-universe">动手学大模型应用开发</a></li>
+<li><a href="https://www.peifang.app/resource" rel="nofollow">独立开发者 - peifang</a> - 分享独立开发者用到的资源，最快实现mvp</li>
+<li><a href="http://javaedge.cn:3000/" rel="nofollow">编程严选网</a></li>
+<li><a href="https://www.toolify.ai/zh/" rel="nofollow">toolify.ai</a> - 已收录 9681 个 AI 工具和 233 个分类的 AI 工具导航站。列表通过 ChatGPT 每天自动更新</li>
+<li><a href="https://cactus-proj.github.io/A-Philosophy-of-Software-Design-zh/" rel="nofollow">《软件设计的哲学》中文翻译</a></li>
+<li><a href="https://nicelinks.site/explore/all" rel="nofollow">倾城之链</a> - 发现好的网站</li>
+<li><a href="https://www.freecodecamp.org/chinese/learn" rel="nofollow">freecodecamp</a> - 计算机自学网站</li>
+<li><a href="https://github.com/weijunext/indie-hacker-tools">weijunext/indie-hacker-tools: 收录独立开发者出海技术栈和工具</a></li>
+<li><a href="https://github.com/Calcium-Ion/new-api">New API</a> - OpenAI 接口管理 &amp; 分发系统</li>
+<li><a href="https://bewildcard.com/" rel="nofollow">WildCard</a> - 自动帮忙注册chatgpt，收取手续费年费</li>
+<li><a href="cs50.harvard.edu/x/2024/">哈佛大学免费开放的一门计算机科学和编程入门课程 CS50</a></li>
+<li><a href="https://github.com/Portkey-AI/gateway">大模型 API 网关 Portkey-AI - gateway</a></li>
+<li><a href="https://github.com/cyrus-and/gdb-dashboard">gdb-dashboard</a> - GDB 可视化调试界面。这是专为 GNU 调试器（GDB）设计的文本界面，支持模块化显示调试的程序相关信息，更直观和方便地调试代码。该界面采用 Python 编写，具备轻松自定义和扩展的特性。</li>
+<li><a href="https://github.com/ahmetb/kubernetes-network-policy-recipes">kubernetes-network-policy-recipes</a> - 只需复制粘贴即可解决 K8s 网络问题的配方。该项目包含了 Kubernetes 网络策略的各种用例和示例 YAML 文件，可直接复制使用。</li>
+<li><a href="https://github.com/munificent/game-programming-patterns">game-programming-patterns</a> - 《游戏编程模式》。该书收集了经过验证、已发布的 3A 级游戏中的经验和模式，来解决你在游戏开发中遇到的问题</li>
+<li><a href="https://github.com/eryajf/awesome-ops">awesome-ops</a> - 记录每一个与运维相关的优秀项目，希望通过这个项目打造一个运维宝典，📥 当前收录项目 405 个。推荐关注。</li>
+<li><a href="https://github.com/linexjlin/GPTs">GPTs 商店的的提示词</a></li>
+<li><a href="https://github.com/EmbraceAGI/LangGPT">LangGPT：让每个人都能成为提示词专家</a></li>
+<li><a href="https://xiaoxinhao.top/article/goodnews" rel="nofollow">优质信息源大集合</a></li>
+<li><a href="https://github.com/cnymw/GolangStudy">GolangStudy</a> - go教程</li>
+<li><a href="https://mp.weixin.qq.com/s/-_LNmHNt4AV1LIgDJT3slA" rel="nofollow">2023美团技术团队热门技术文章汇总</a></li>
+<li><a href="https://github.com/oddfar/campus-imaotai">i茅台app自动预约，每日自动预约，支持docker一键部署</a></li>
+<li><a href="https://news.miracleplus.com/" rel="nofollow">齐思</a> - 一个中文的每日科技新闻的集合网站，由 AI agent 在后面维护整理</li>
+<li><a href="https://null.hair/" rel="nofollow">发缘探险集市</a> - 发现有趣网站的地方</li>
+<li><a href="https://daily-blog.chlinlearn.top/" rel="nofollow">值得一读技术博客</a></li>
+<li><a href="https://github.com/datawhalechina/hugging-llm?tab=readme-ov-file">HuggingLLM</a> - 介绍 ChatGPT 原理、使用和应用</li>
+<li><a href="https://www.usememos.com/" rel="nofollow">memos - 开源版flomo</a></li>
+<li><a href="https://h0kf1dj0xjn.feishu.cn/wiki/Sr7Rwim7lihoipkHJPPc5YbZnac" rel="nofollow">计算机相关图书资源</a> - 其实书籍资源有这么多，收藏过后看过的有多少呢？</li>
+<li><a href="http://ddd.feiniaojin.com/0.0.html" rel="nofollow">悟道领域驱动设计 - DDD实践</a></li>
+<li><a href="https://developer.apple.com/cn/design/human-interface-guidelines/" rel="nofollow">Apple - 人机界面指南</a> - 独立开发者相关</li>
+<li><a href="https://ki6j1b0d92h.feishu.cn/wiki/wikcnAFcEccJ5iXiU8MRntc2Vyb" rel="nofollow">AI智库 - 专注分享AI行业的知识库</a></li>
+<li><a href="https://uxchi.notion.site/881b4c0179a74935a3f607ad3521cdb5" rel="nofollow">界面灵感参考</a> - 独立开发者相关</li>
+<li><a href="https://aicolors.co/" rel="nofollow">ai配色</a></li>
+<li><a href="https://ahrefs.com/zh/seo" rel="nofollow">SEO入门指南</a></li>
+</ul>
+<h1>好文</h1>
+<ul>
+<li><a href="https://www.bestblogs.dev/?category=programming" rel="nofollow">bestblogs.dev</a> - 提供了一个精心策划的技术阅读平台</li>
+<li><a href="https://x-hiring.hehehai.cn/?s=" rel="nofollow">X-Hiring</a> - 数据来源于v站和电鸭的ai招聘整合站</li>
+<li><a href="https://www.uxbaike.com/" rel="nofollow">UXBAIKE</a> - UX百科，属于设计师的专业知识库</li>
+<li><a href="https://liduos.com/" rel="nofollow">莫尔索</a> - 一个在AI领域贡献比较多相对专业文章的博客</li>
+<li><a href="https://learn.codesignal.com/" rel="nofollow">codesignal</a> - 一个自学ai知识的网站，互动做的很好</li>
+<li><a href="https://www.vellum.ai/blog/how-to-evaluate-your-rag-system" rel="nofollow">如何评估您的 RAG 系统？</a></li>
+<li><a href="https://mp.weixin.qq.com/s/Hu097Ob27WKSFIfaTeS6bw" rel="nofollow">独立开发寻找产品创意的哲学</a></li>
+<li><a href="https://wizardzines.com/comics/inside-git/" rel="nofollow">用一张图完全了解.git内部架构，非常直观</a></li>
+<li><a href="https://openpath.chadwhitacre.com/2024/the-open-source-sustainability-crisis/" rel="nofollow">开源可持续性危机</a></li>
+<li><a href="https://quail.ink/zing927/p/qian-wan-fu-weng-yue-du-40-ben-shu-ji-hou-de-zhi-shi-zheng-li" rel="nofollow">千万富翁阅读40本书籍后的知识整理</a> - 先mark，立个flag今年持续看</li>
+<li><a href="https://www.promptingguide.ai/research/rag" rel="nofollow">Rag解惑</a></li>
+<li><a href="https://humanloop.com/blog/evaluating-llm-apps" rel="nofollow">Evaluating LLM Applications</a> - 评估LLM应用程序</li>
+<li><a href="https://openai.plus/archives/1022" rel="nofollow">ChatGPT注册与Plus会员开通全攻略</a></li>
+<li><a href="https://mp.weixin.qq.com/s/Ge4jCaDNYeEucwJZl3mTKg" rel="nofollow">“网关日调用从1千到1亿”，项目背后我的十年开发心得</a></li>
+<li><a href="https://sspai.com/post/75837" rel="nofollow">摄影 - 这些关于摄影的装备、技巧和理论，助你假期拍摄更顺利</a></li>
+<li><a href="https://www.zhihu.com/question/306404542/answer/826811472" rel="nofollow">关于重疾险</a></li>
+<li><a href="https://weibo.com/ttarticle/p/show?id=2309404491180896288936" rel="nofollow">iPhone 相机操作指南 3.0</a></li>
+<li><a href="https://godruoyi.com/posts/why-laravel" rel="nofollow">为什么 Laravel 这么优秀</a></li>
+<li><a href="https://mp.weixin.qq.com/s/zopt3x-ffCDT_AeMb8uAvQ" rel="nofollow">人生没有后悔药｜健康管理手册 - 高尿酸管理笔记</a></li>
+<li><a href="https://www.cnblogs.com/gaoyuechen/p/16563372.html" rel="nofollow">k8s pod 内存 所以判断container_memory_working_set_bytes会比container_memory_usage_bytes更为准确</a></li>
+<li><a href="https://read.engineerscodex.com/p/how-apple-built-icloud-to-store-billions" rel="nofollow">苹果是如何构建可存储数十亿数据库的iCloud</a></li>
+<li><a href="https://www.jianshu.com/p/ea37cc9a401f" rel="nofollow">Linux下内存泄漏排查</a></li>
+<li><a href="https://juejin.cn/post/6867050579139493896" rel="nofollow">HTTP 499 问题处理方法合集</a></li>
+<li><a href="https://afdian.net/p/a668f5b8bfc511edab7c52540025c377" rel="nofollow">谁谋杀了我们的游戏？</a></li>
+<li><a href="https://mp.weixin.qq.com/s/BZR_ltze5OHU1Dhjdymylw" rel="nofollow">万字长文：AI陪伴产品的终极解法?</a></li>
+<li><a href="https://mp.weixin.qq.com/s/WewzHibhP8hTg_G_8MIc0g" rel="nofollow">养生博主的23年总结</a>
+<ul>
+<li>饮食：无糖、多喝水、关注血糖的剧烈波动</li>
+<li>运动：坚持比什么都重要</li>
+<li>睡眠：不要为了工作或者娱乐少睡一小时</li>
+</ul>
+</li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzAwNzAzMDY1NQ==&amp;mid=2649942046&amp;idx=1&amp;sn=672f0dd542942d9b5e7221407127efac&amp;scene=21#wechat_redirect" rel="nofollow">“标签Tag”设计分析</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzUyMjY5Njg0OQ==&amp;mid=2247485009&amp;idx=1&amp;sn=1b6bcd78259891ab1f890bfb649b089d&amp;scene=21#wechat_redirect" rel="nofollow">互联网人的大模型实践指南：从小白到AI Builder</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzI2NTQxMjkzOA==&amp;mid=2247487922&amp;idx=1&amp;sn=d7c4dbd3d54fddb3989d35d3a521400e&amp;scene=21#wechat_redirect" rel="nofollow">Stable Diffusion你需要知道的算法原理（通俗版）</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzkyMzU5Mzk1NQ==&amp;mid=2247506714&amp;idx=1&amp;sn=11487f9f3f506df8a1b4b8eb36fa5af7&amp;source=41#wechat_redirect" rel="nofollow">字节国际支付十连问</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzI1NzQ2MzgyMw==&amp;mid=2247485682&amp;idx=1&amp;sn=c7258f9781050b265744232ed1913f63&amp;scene=21#wechat_redirect" rel="nofollow">可用性指标大家族</a></li>
+</ul>
+<h1>教程</h1>
+<ul>
+<li><a href="https://docker.easydoc.net/doc/81170005/cCewZWoN/lTKfePfP" rel="nofollow">Docker 快速入门</a></li>
+<li><a href="https://www.sjkjc.com/postgresql/" rel="nofollow">postgresql教程</a></li>
+</ul></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://wuyiwai.github.io">wuyiwai's blog</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("03/31/2024"!=""){
+    var startSite=new Date("03/31/2024");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
 </body>
-</html> 
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek main https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.disabled=true;
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","wuyiwai/wuyiwai.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+
+
+</html>
